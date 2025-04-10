@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight, CheckCircle, Clipboard, Users } from 'lucide-react';
+import Interview from './interview/page';
+import InterviewsPage from '../components/interviews';
 
 export default function Homepage() {
   // Colors used in this design:
@@ -72,6 +74,9 @@ export default function Homepage() {
           </div>
         </div>
       </section>
+      {
+        <InterviewsPage />
+      }
 
       {/* Features Section */}
       <section className="py-20 bg-gray-800">
